@@ -18,6 +18,7 @@ npm start
 依赖注入：Dependency Injection 简称 DI
 控制反转：Inversion of Control 简称 IOC
 
+
 ```javascript
 var product = new Product();
 createShipment(product);
@@ -37,6 +38,13 @@ provider:[{provide:ProductService,useClass:ProductService}]
 provider:[{provide:ProductService,useClass:AnotherProductService}]
 provider:[{provide:ProductService,useFactory:()=>{...}}]
 ```
+
+
+总结
++ 当提供器声明在app.module.ts，所有组件都可以使用
++ 当提供器声明在组件中时，它只对它自己和它的子组件可用，其他组件不能调用
++ 当声明在块中提供器和声明在组件中提供器具有相同的token时，声明在组件中的提供器会覆盖声明在块中提供器
++ 一般情况下，我们将提供器声明在模块中
 
 ## AngularProjectPlus
 
