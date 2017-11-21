@@ -7,13 +7,11 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ['./product-detail.component.scss']
 })
 export class ProductDetailComponent implements OnInit {
-  public productId : number;
+  public productTitle : string;
   
   constructor(private routerInfo: ActivatedRoute) {}
   ngOnInit() {
-      //----得到了id,并把它给了productId
-      this.productId=this.routerInfo.snapshot.params["id"]
-      //----------------------------
+      this.productTitle=this.routerInfo.snapshot.params["prodTitle"]
   }
 
 }
