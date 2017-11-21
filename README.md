@@ -12,8 +12,8 @@ npm start
 #### project branch
 branch | 备注
 ---- | ------ 
-test1 | 添加路由
-test2 | 路由守卫
+test1 | 路由
+test2 | 依赖注入
 
 ## AngularProjectPlus
 
