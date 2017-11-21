@@ -1,7 +1,7 @@
 # angular study
 
 2017-11-21
- Route
+ 依赖注入
 
 #### How to start this project
 ```javascript
@@ -10,12 +10,33 @@ npm start
 ``` 
 
 #### remark
-路由实战思路
-1. 创建商品详情组件，显示商品的图片和标题
-2. 重构代码，把轮播图组件和商品列表组件封装进新的Home组件
-3. 配置路由，在导航到商品详情组件时传递商品的标题参数
-4. 修改App组件，根据路由显示Home组件或商品详情组件
-5. 修改商品列表组件，给商品标题添加带routeLink指令的链接，导航到商品详情路由。
+学习内容
+1. 什么是依赖注入模式及使用依赖注入的好处
+2. 介绍Angular的依赖注入实现：注入器和提供器
+3. 注入器的层级关系
+
+依赖注入：Dependency Injection 简称 DI
+控制反转：Inversion of Control 简称 IOC
+
+```javascript
+var product = new Product();
+createShipment(product);
+```
+
+<img src="./src/assets/img/inject.jpg"/>
+<img src="./src/assets/img/benefit.png" height="300" alt="好处"/>
+
+### 注入器
+```javascript
+constructor(private productService:ProductService){}
+```
+### 提供器
+```javascript
+provider:[ProductService]
+provider:[{provide:ProductService,useClass:ProductService}]
+provider:[{provide:ProductService,useClass:AnotherProductService}]
+provider:[{provide:ProductService,useFactory:()=>{...}}]
+```
 
 ##路由
 名称 | 简介 
