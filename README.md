@@ -25,6 +25,9 @@ npm start
 <button (click)="toProductDetail()">商品详情</button>
 ```
 <img src="./src/assets/img/aa.png">
+```javascript
+<button (click)="saved = true">
+```
 
 _默认是单向绑定_
 
