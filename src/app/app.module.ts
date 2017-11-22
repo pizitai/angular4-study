@@ -1,3 +1,4 @@
+import {ProductService} from './shared/product.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,7 +12,6 @@ import { StarsComponent } from './stars/stars.component';
 import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { WuComponent } from './wu/wu.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +23,13 @@ import { WuComponent } from './wu/wu.component';
     StarsComponent,
     SearchComponent,
     HomeComponent,
-    ProductDetailComponent,
-    WuComponent
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
