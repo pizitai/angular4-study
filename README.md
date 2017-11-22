@@ -14,8 +14,9 @@ branch | 备注
 ---- | ------ 
 test1 | 路由
 test2 | 依赖注入
+test3 | 依赖注入demo
 
-## AngularProjectPlus
+## Project-cli
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
 
