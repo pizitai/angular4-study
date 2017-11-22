@@ -10,12 +10,26 @@ npm start
 ``` 
 
 #### remark
-学习内容
-1. 数据绑定
-2. 响应式编程
-3. 管道
+数据绑定
+* 使用插值表达式将一个表达式的值显示在模版上
+```javascript
+<h1>{{productTitle}}</h1>
+```
+* 使用方括号将HTML标签的一个属性绑定到一个表达式上
+```javascript
+<img [src]="imgUrl" />
+```
 
-## AngularProjectPlus
+* __使用小括号将组件控制器的一个方法绑定为模版上一个事件的处理器__
+```javascript
+<button (click)="toProductDetail()">商品详情</button>
+```
+<img src="./src/assets/img/aa.png">
+
+_默认是单向绑定_
+
+
+## Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
 
