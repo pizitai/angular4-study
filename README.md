@@ -28,6 +28,18 @@ npm start
 ```javascript
 <button (click)="saved = true">
 ```
+#### HTML属性和DOM属性的关系
+* 少量HTML属性和DOM属性之间有着1:1的映射，如id
+* 有些HTML属性没有对应的DOM属性，如colspan
+* 有些DOM属性没有对应的HTML属性，如textContent
+* _**就算名字相同，HTML属性和DOM属性也不是同一样东西**_
+* _HTML属性的值指定了初始值；DOM属性的值表示当前值。
+DOM属性的值可以改不; HTML属性的值不能改变_
+* **模版绑定是通过DOM属性和事件来工作的，而不是HTML属性**
+| 属性        | 描述           |
+| ------------- |:-------------:| 
+| HTML属性      | 初始化后不会改变 |
+| DOM属性      | 初始化后会改变 |
 
 _默认是单向绑定_
 
