@@ -10,41 +10,23 @@ npm start
 ``` 
 
 #### remark
-数据绑定
-* 使用插值表达式将一个表达式的值显示在模版上
+HTML属性绑定
+* 基本HTML属性绑定
 ```javascript
-<h1>{{productTitle}}</h1>
+<td [attr.colspan]="tableColspan">Something</td>
 ```
-* 使用方括号将HTML标签的一个属性绑定到一个表达式上
+* CSS类绑定
 ```javascript
-<img [src]="imgUrl" />
+<div class="aaa bbb" [class]="someExpression">something</div>
+<div [class.special]="isSpecial"> something</div>
+<div [ngClass]="{aaa:isA,bbb:isB}"></div>
 ```
 
-* __使用小括号将组件控制器的一个方法绑定为模版上一个事件的处理器__
+* 样式绑定
 ```javascript
-<button (click)="toProductDetail()">商品详情</button>
+<button [style.color]="isSpecial  ? 'red' : 'green'">Red</button>
+<div [ngStyle]="{'font-style':this.canSave ? 'italic' : 'normal'}"></div>
 ```
-<img src="./src/assets/img/aa.png">
-```javascript
-<button (click)="saved = true">
-```
-#### HTML属性和DOM属性的关系
-* 少量HTML属性和DOM属性之间有着1:1的映射，如id
-* 有些HTML属性没有对应的DOM属性，如colspan
-* 有些DOM属性没有对应的HTML属性，如textContent
-* _**就算名字相同，HTML属性和DOM属性也不是同一样东西**_
-* _HTML属性的值指定了初始值；DOM属性的值表示当前值。
-DOM属性的值可以改不; HTML属性的值不能改变_
-* **模版绑定是通过DOM属性和事件来工作的，而不是HTML属性**
-| 属性        | 描述           |
-| ------------- |:-------------:| 
-| HTML属性      | 初始化后不会改变 |
-| DOM属性      | 初始化后会改变 |
-<img src="./src/assets/img/bb.jpg">
-
-
-_默认是单向绑定_
-
 
 ## Project
 
