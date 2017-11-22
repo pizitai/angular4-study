@@ -1,7 +1,7 @@
 # angular study
 
 2017-11-22
- 依赖注入
+ 
 
 #### How to start this project
 ```javascript
@@ -11,9 +11,9 @@ npm start
 
 #### remark
 学习内容
-1. 重写ProductService，包含3个方法：getProducts(),getProduct(id)以及getCommentsForProduct(id)
-2. 修改路由配置，在从商品列表进入商品详情时不再传递商品名称，改为传递商品ID
-3. 注入ProductService并使用期服务
+1. 数据绑定
+2. 响应式编程
+3. 管道
 
 ## AngularProjectPlus
 
