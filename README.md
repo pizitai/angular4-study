@@ -46,7 +46,7 @@ provider:[{provide:ProductService,useFactory:()=>{...}}]
 + 当声明在块中提供器和声明在组件中提供器具有相同的token时，声明在组件中的提供器会覆盖声明在块中提供器
 + 一般情况下，我们将提供器声明在模块中
 
-## AngularProjectPlus
+## Project-cli
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
 
