@@ -15,6 +15,8 @@ branch | 备注
 test1 | 路由
 test2 | 依赖注入
 test3 | 依赖注入demo
+test4 | 使用工厂和值声明提供器
+test2_3 | 注入器层级关系
 
 ## Project-cli
 
