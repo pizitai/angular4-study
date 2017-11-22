@@ -1,8 +1,17 @@
 <p>
   bind works!
 </p>
-<button type="button" (click)="doOnClick($event)">点我</button>
-<img [src]="imgUrl" alt="">
-<img src="{{imgUrl}}" alt="">
-<input name="" value="TOm" (input)="doOnInput($event)">
-<button >点我</button>
+
+<table>
+  <tr>
+    <td [attr.colspan]="size">慕课网</td>
+  </tr>
+</table>
+<div class="a b c">慕课网</div>
+<div [class]="divClass">慕课网2</div>
+<div class="a b" [class.c]="isBig">慕课网3</div>
+<div [ngClass]="divClass2">慕课网4</div>
+<div [style.color]="isDev ? 'red' : 'blue'">慕课网5</div>
+<div [style.font-size.em]="isDev ? 3 : 1">慕课网6</div>
+<div [ngStyle]="divStyle">慕课网7</div>
+

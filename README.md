@@ -28,6 +28,9 @@ HTML属性绑定
 <div [ngStyle]="{'font-style':this.canSave ? 'italic' : 'normal'}"></div>
 ```
 
+1. 属性绑定
+<img src="./src/assets/img/aa.jpg" alt="">
+
 ## Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
