@@ -17,6 +17,10 @@ test2 | 依赖注入
 test2_1 | 依赖注入demo
 test2_2 | 使用工厂和值声明提供器
 test2_3 | 注入器层级关系
+test2_4 | 使用依赖注入重构
+test3 | 绑定、事件
+test3_1 | DOM属性绑定
+test3_2 | HTML属性绑定
 
 ## Project-cli
 
