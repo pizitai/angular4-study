@@ -1,3 +1,4 @@
+import {AnotherProductService} from './shared/another-product.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -18,7 +19,29 @@ import { LoggerService } from "./shared/logger.service";
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ProductService,LoggerService],
+  providers: [
+    // ProductService
+    {
+    provide:ProductService,
+    useFactory:(logger:LoggerService,appConfig) => {
+      // return new ProductService(new LoggerService());
+      // let logger = new LoggerService();
+      // let dev = Math.random() > 0.5;
+      if(appConfig.isDev){
+        return new ProductService(logger);
+      }else{
+        return new AnotherProductService(logger);
+      }
+    },
+    deps:[LoggerService,"APP_CONFIG"]
+  }
+    ,LoggerService,
+    {
+      // provide: "IS_DEV_ENV", useValue: false
+      provide: "APP_CONFIG", useValue: {is_Dev: false}
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+    

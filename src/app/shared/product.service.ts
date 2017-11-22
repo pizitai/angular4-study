@@ -4,7 +4,7 @@ import { LoggerService } from "./logger.service";
 @Injectable()
 export class ProductService {
 
-  constructor(private logger: LoggerService) { }
+  constructor(public logger: LoggerService) { }
   getProduct():Product{
     this.logger.log('get Product 方法被调用');
     return new Product(0,'iPhone7',5899,'最新款苹果手机');
