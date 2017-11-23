@@ -10,26 +10,9 @@ npm start
 ``` 
 
 #### remark
-HTML属性绑定
+双向绑定
 * 基本HTML属性绑定
-```javascript
-<td [attr.colspan]="tableColspan">Something</td>
-```
-* CSS类绑定
-```javascript
-<div class="aaa bbb" [class]="someExpression">something</div>
-<div [class.special]="isSpecial"> something</div>
-<div [ngClass]="{aaa:isA,bbb:isB}"></div>
-```
 
-* 样式绑定
-```javascript
-<button [style.color]="isSpecial  ? 'red' : 'green'">Red</button>
-<div [ngStyle]="{'font-style':this.canSave ? 'italic' : 'normal'}"></div>
-```
-
-1. 属性绑定
-<img src="./src/assets/img/aa.jpg" alt="">
 
 ## Project
 
