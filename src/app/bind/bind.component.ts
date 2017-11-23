@@ -9,30 +9,15 @@ import { FormControl } from "@angular/forms";
   styleUrls: ['./bind.component.scss']
 })
 export class BindComponent implements OnInit {
-  getStockInfo(value: string): void {
-    console.log(value)
-  }
+  birthday: Date = new Date();
+  pi: number = 3.1415926;
+  pii: number = 3;
+  size: number = 7;
   ngOnInit(): void {
-    
+
   }
-
-  searchInput:FormControl = new FormControl();
-
   constructor() {
-    Observable.from([1,2,3,4])
-      .filter(e => e%2 == 0)
-      .map( e => e*e)
-      .subscribe(
-        e => console.log(e),
-        err => console.error(err),
-        () => console.log('line is over')
-      )
-    this.searchInput.valueChanges
-      .debounceTime(500)
-      .subscribe( stockCode => this.getStockInfo(stockCode))
+
   }
-  
-  onKey(value:string){
-    console.log(value);
-  }
+
 }

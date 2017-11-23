@@ -6,12 +6,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BindComponent } from './bind/bind.component';
+import { MultiplePipe } from './pipe/multiple.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BindComponent,
+    MultiplePipe,
   ],
   imports: [
     BrowserModule,
