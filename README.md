@@ -10,8 +10,7 @@ npm start
 ``` 
 
 #### remark
-响应式编程
-<img src="./src/assets/img/aa.png" />
+管道
 
 
 ## Project
