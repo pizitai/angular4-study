@@ -10,10 +10,7 @@ npm start
 ``` 
 
 #### remark
-学习内容
-1. 数据绑定
-2. 响应式编程
-3. 管道
+实战
 
 ## AngularProjectPlus
 
