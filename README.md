@@ -25,6 +25,13 @@ test3_3 | 双向绑定
 test3_4 | 响应式编程
 test3_5 | 管道
 test3_6 | 根据响应式编程和管道实战
+test6 | 组件间通讯
+test6_1 | 输入属性
+test6_2 | 输出属性
+test6_3 | 中间人模式
+test6_4 | 组件生命周期钩子概述
+test6_5 | OnChanges钩子
+test6_6 | 变更检测和DoCheck钩子
 
 ## Project-cli
 
