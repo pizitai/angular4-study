@@ -23,6 +23,7 @@ test3_1 | DOM属性绑定
 test3_2 | HTML属性绑定
 test3_3 | 双向绑定
 test3_4 | 响应式编程
+test3_5 | 管道
 
 ## Project-cli
 
