@@ -22,6 +22,7 @@ test3 | 绑定、事件
 test3_1 | DOM属性绑定
 test3_2 | HTML属性绑定
 test3_3 | 双向绑定
+test3_4 | 响应式编程
 
 ## Project-cli
 
