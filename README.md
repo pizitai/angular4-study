@@ -10,7 +10,12 @@ npm start
 ``` 
 
 #### remark
-实战
+组件间通讯
+<img src="./src/assets/img/aa.png">
+学习内容
+- 组件的输入输出属性
+- 使用中间人模式传递数据
+- 组件生命周期以及angular的变化发现机制
 
 ## AngularProjectPlus
 
