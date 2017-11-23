@@ -10,8 +10,8 @@ npm start
 ``` 
 
 #### remark
-双向数据绑定
-
+响应式编程
+<img src="./src/assets/img/aa.png" />
 
 
 ## Project

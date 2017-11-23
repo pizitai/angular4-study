@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-bind',
@@ -6,11 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bind.component.scss']
 })
 export class BindComponent implements OnInit {
-  nameaa:string = '';
   ngOnInit(): void {
-    throw new Error("Method not implemented.");
+    
   }
 
   constructor() {
+    Observable.from([1,2,3,4])
+      .filter(e => e%2 == 0)
+      .map( e => e*e)
+      .subscribe(
+        e => console.log(e),
+        err => console.error(err),
+        () => console.log('line is over')
+      )
   }
 }
