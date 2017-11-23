@@ -1,6 +1,6 @@
 # angular study
 
-2017-11-22
+2017-11-23
  
 
 #### How to start this project
@@ -10,8 +10,8 @@ npm start
 ``` 
 
 #### remark
-双向绑定
-* 基本HTML属性绑定
+双向数据绑定
+
 
 
 ## Project
