@@ -10,7 +10,7 @@ npm start
 ``` 
 
 #### remark
-输入属性
+输出属性
 
 ## AngularProjectPlus
 

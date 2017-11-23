@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PriceQuote } from "./price-quote/price-quote.component";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  stock:string='';
+  stock: string = '';
+  priceQuote: PriceQuote = new PriceQuote("", 0);
+  priceQuoteHandler(event: PriceQuote) {
+    // console.log(event);
+    this.priceQuote = event;
+  }
 }
