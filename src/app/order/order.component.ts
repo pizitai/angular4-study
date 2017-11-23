@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { PriceQuote } from "../price-quote/price-quote.component";
 
 @Component({
   selector: 'app-order',
@@ -7,14 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
   @Input()
-  stockCode:string;
-  @Input()
-  amount:number;
+  priceQuote:PriceQuote;
+
 
   constructor() {
-    setInterval(() =>{
-      this.stockCode = "Apple";
-    },3000)
+    
    }
 
   ngOnInit() {

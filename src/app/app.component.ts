@@ -13,4 +13,8 @@ export class AppComponent {
     // console.log(event);
     this.priceQuote = event;
   }
+  buyHandler(event: PriceQuote) {
+    // console.log(event);
+    this.priceQuote = event;
+  }
 }

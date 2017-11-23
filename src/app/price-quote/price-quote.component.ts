@@ -9,7 +9,9 @@ export class PriceQuoteComponent implements OnInit {
   stockCode: string = 'IBM';
   price: number;
   @Output('priceChange')
-  lastPrice: EventEmitter<PriceQuote> = new EventEmitter;
+  lastPrice: EventEmitter<PriceQuote> = new EventEmitter();
+  @Output()
+  buy:EventEmitter<PriceQuote>= new EventEmitter();
 
   constructor() {
     setInterval(() => {
@@ -20,6 +22,9 @@ export class PriceQuoteComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+  buyStock(event){
+    this.buy.emit(new PriceQuote(this.stockCode,this.price))
   }
 
 }
