@@ -9,7 +9,7 @@ export class PriceQuoteComponent implements OnInit {
   stockCode: string = 'IBM';
   price: number;
   @Output('priceChange')
-  lastPrice: EventEmitter<PriceQuote> = new EventEmitter;
+  lastPrice: EventEmitter<PriceQuote> = new EventEmitter();
 
   constructor() {
     setInterval(() => {
