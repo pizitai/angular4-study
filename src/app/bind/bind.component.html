@@ -1,5 +1,8 @@
 <p>
-  bind works!
+  响应式编程demo
 </p>
+<input [formControl]="searchInput">
+<br>
+<span>以前的</span>
 
-
+<input #myField (keyup)='onKey(myField.value)'>
