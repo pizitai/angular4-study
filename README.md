@@ -11,6 +11,12 @@ npm start
 
 #### remark
 变更检测和DoCheck钩子
+**由_zone.js_实现的**
+> 主要的目的：保证组件的属性的变化和页面的变化是同步的，浏览器中发生的任何异步事件都会触发变更检测
+比如：**点击按钮，输入数据、http返回**(注意使用)
+变更检测机制
+<img src="./src/assets/img/aa.png" />
+<img src="./src/assets/img/bb.png" />
 
 ## AngularProjectPlus
 
