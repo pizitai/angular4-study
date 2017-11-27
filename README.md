@@ -11,6 +11,7 @@ npm start
 
 #### remark
 组件生命周期钩子概述
+<img src="./src/assets/img/aa.jpg" />
 
 ## AngularProjectPlus
 
