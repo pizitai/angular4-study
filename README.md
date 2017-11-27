@@ -10,7 +10,7 @@ npm start
 ``` 
 
 #### remark
-组件生命周期钩子概述
+OnChanges钩子
 
 ## AngularProjectPlus
 
