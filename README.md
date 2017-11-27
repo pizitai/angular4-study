@@ -10,8 +10,7 @@ npm start
 ``` 
 
 #### remark
-OnChanges钩子  
-只有在输入属性时才会被调用
+变更检测和DoCheck钩子
 
 ## AngularProjectPlus
 
