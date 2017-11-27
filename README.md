@@ -10,7 +10,7 @@ npm start
 ``` 
 
 #### remark
-中间人模式
+组件生命周期钩子概述
 
 ## AngularProjectPlus
 
