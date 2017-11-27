@@ -10,7 +10,8 @@ npm start
 ``` 
 
 #### remark
-OnChanges钩子
+OnChanges钩子  
+只有在输入属性时才会被调用
 
 ## AngularProjectPlus
 
