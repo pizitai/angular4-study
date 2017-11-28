@@ -32,6 +32,11 @@ test6_3 | 中间人模式
 test6_4 | 组件生命周期钩子概述
 test6_5 | OnChanges钩子
 test6_6 | 变更检测和DoCheck钩子
+test6_7 | view钩子
+test6_8 | ngContent指令
+test6_9 | 最后的钩子
+test6_10 | 本章实践
+test6_11 | 本章小结
 
 ## Project-cli
 
