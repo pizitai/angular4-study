@@ -10,7 +10,10 @@ npm start
 ``` 
 
 #### remark
-响应式表单重构（引入 **ReactiveFormsModule**）
+表单校验
+- Angular的校验器
+- 校验响应式表单
+- 校验模版式表单
 
 
 
