@@ -1,0 +1,40 @@
+<!-- <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+  <div ngModelGroup="userInfo">
+    用户名：<input type="text" #username="ngModel" ngModel name="username" >
+  </div>
+  <div>
+    手机号：<input type="text" ng-model="">
+  </div>
+  <div>
+    邮政编码：<input type="number">
+  </div>
+  <div>
+    密码：<input type="password">
+  </div>
+  <div>
+    确认密码：<input type="password">
+  </div>
+  <button type="submit">注册</button>
+</form>
+<div>
+  {{myForm.value | json}}
+  <br>
+  {{username.value}}
+</div> -->
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+  <div>
+    用户名：<input type="text" ngModel name="username">
+  </div>
+  <div>
+    手机号：<input type="number" ngModel name="mobile">
+  </div>
+  <div ngModelGroup="passwordsGroup">
+    <div>
+      密码：<input type="password" ngModel name="password">
+    </div>
+    <div>
+      确认密码：<input type="password" ngModel name="pconfirm">
+    </div>
+  </div>
+  <button type="submit">注册</button>
+</form>

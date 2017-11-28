@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, FormBuilder } from "@angular/forms";
 
 @Component({
   selector: 'app-reactive-regist',
@@ -6,8 +7,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reactive-regist.component.scss']
 })
 export class ReactiveRegistComponent implements OnInit {
+  formModel: FormGroup;
 
-  constructor() { }
+  constructor(fb:FormBuilder) {
+    this.formModel = fb.group({
+      username: [''],
+      mobile: [''],
+      passwordsGroup: fb.group({
+        password: [''],
+        pconfirm: ['']
+      })
+    })
+    // this.formModel = new FormGroup({
+    //   username: new FormControl(),
+    //   mobile: new FormControl(),
+    //   passwordsGroup: new FormGroup({
+    //     password: new FormControl(),
+    //     pconfirm: new FormControl()
+    //   })
+    // })
+  }
+  onSubmit(){
+    console.log(this.formModel.value);
+  }
 
   ngOnInit() {
   }
