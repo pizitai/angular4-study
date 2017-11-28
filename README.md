@@ -10,7 +10,10 @@ npm start
 ``` 
 
 #### remark
-第七章
+学习内容：
+- 模版式表单
+- 响应式表单
+- 表单验证
 
 
 ## AngularProjectPlus
