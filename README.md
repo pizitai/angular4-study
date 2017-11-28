@@ -11,6 +11,10 @@ npm start
 
 #### remark
 模版式表单（引入 **FormsModule**）
+指令
+- NgForm
+- NgModel
+- NgModelGroup
 
 
 
