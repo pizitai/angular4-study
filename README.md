@@ -10,17 +10,8 @@ npm start
 ``` 
 
 #### remark
-响应式表单（引入 **ReactiveFormsModule**）
-- FormControl
-- FormGroup
-- FormArray
+响应式表单重构（引入 **ReactiveFormsModule**）
 
-指令
-类名 | 指令(需要属性绑定)  | 指令(不需要属性绑定)
----- | ---- | ----
-FormGroup | formGroup | formGroupName
-FormControl | formControl | formControlName
-FormArray |  | formArrayName
 
 
 ## AngularProjectPlus
