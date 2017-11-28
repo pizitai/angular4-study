@@ -9,4 +9,6 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     console.log('aa');   
   }
+  title:string='app works';
+  divContent='<div>慕课网</div>';
 }
