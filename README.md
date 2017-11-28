@@ -10,12 +10,11 @@ npm start
 ``` 
 
 #### remark
-组件间通讯
-<img src="./src/assets/img/aa.png">
-学习内容
-- 组件的输入输出属性
-- 使用中间人模式传递数据
-- 组件生命周期以及angular的变化发现机制
+本章实践
+```javascript
+求和函数
+let sum = this.comments.reduce((sum, comment) => sum + comment.rating, 0);
+```
 
 ## AngularProjectPlus
 
