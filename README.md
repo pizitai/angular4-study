@@ -10,8 +10,8 @@ npm start
 ``` 
 
 #### remark
-view钩子
-<img src="./src/assets/img/aa.png" />
+
+
 
 ## AngularProjectPlus
 
