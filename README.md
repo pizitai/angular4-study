@@ -12,9 +12,10 @@ npm start
 #### remark
 模版式表单（引入 **FormsModule**）
 指令
-- NgForm
-- NgModel
-- NgModelGroup
+- NgForm  -> FormGroup
+- NgModel  -> FormControl
+- NgModelGroup   ->  FormGroup
+- ngNoForm (不让angular接管form)
 
 
 
