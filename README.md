@@ -10,8 +10,8 @@ npm start
 ``` 
 
 #### remark
-投影
-ngContent
+最后的钩子
+ngAfterContentInit和ngAfterContentChecked是投影内容完成后调用的
 
 
 ## AngularProjectPlus
