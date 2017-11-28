@@ -1,39 +1,33 @@
-<!-- <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
-  <div ngModelGroup="userInfo">
-    用户名：<input type="text" #username="ngModel" ngModel name="username" >
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value,myForm.valid)" novalidate>
+  <div>
+    用户名：<input type="text" ngModel required minlength="6" name="username" (input)="onMobileInput(myForm)">
+  </div>
+  <div [hidden]="mobileValid || mobileUntouched">
+    <div [hidden]="!myForm.form.hasError('required','username')">
+      用户名是必填项
+    </div>
+    <div [hidden]="!myForm.form.hasError('minlength','username')">
+      用户名最小长度是6
+    </div>
   </div>
   <div>
-    手机号：<input type="text" ng-model="">
+    手机号：<input type="number" ngModel mobile name="mobile">
   </div>
-  <div>
-    邮政编码：<input type="number">
+  <div [hidden]="!myForm.form.hasError('mobile','mobile')">
+    请输入正确的手机号
   </div>
-  <div>
-    密码：<input type="password">
-  </div>
-  <div>
-    确认密码：<input type="password">
-  </div>
-  <button type="submit">注册</button>
-</form>
-<div>
-  {{myForm.value | json}}
-  <br>
-  {{username.value}}
-</div> -->
-<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
-  <div>
-    用户名：<input type="text" ngModel name="username">
-  </div>
-  <div>
-    手机号：<input type="number" ngModel name="mobile">
-  </div>
-  <div ngModelGroup="passwordsGroup">
+  <div ngModelGroup="passwordsGroup" equal>
     <div>
-      密码：<input type="password" ngModel name="password">
+      密码：<input type="password" ngModel minlength="6" name="password">
+    </div>
+    <div [hidden]="!myForm.form.hasError('minlength',['passwordsGroup','password'])">
+      密码最小长度是6
     </div>
     <div>
       确认密码：<input type="password" ngModel name="pconfirm">
+    </div>
+    <div [hidden]="!myForm.form.hasError('equal','passwordsGroup')">
+      {{myForm.form.getError('equal','passwordsGroup')?.desc}}
     </div>
   </div>
   <button type="submit">注册</button>

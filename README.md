@@ -10,10 +10,7 @@ npm start
 ``` 
 
 #### remark
-状态字段
-- touched和untouched  -  控制错误信息是否显示
-- pristine和dirty    -  关注的是值是否变过
-- pending    -  
+模版式表单校验
 
 
 ## AngularProjectPlus
