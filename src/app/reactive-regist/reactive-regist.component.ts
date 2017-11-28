@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators, AbstractControl } from "@angular/forms";
-import { equalValidator, mobileValidator } from "../validator/validators"
+import { equalValidator, mobileValidator, mobileAsyncValidator } from "../validator/validators"
 
 @Component({
   selector: 'app-reactive-regist',
@@ -26,10 +26,10 @@ export class ReactiveRegistComponent implements OnInit {
   constructor(fb: FormBuilder) {
     this.formModel = fb.group({
       username: ['', [Validators.required, Validators.minLength(6)]],
-      mobile: ['', mobileValidator],
+      mobile: ['', mobileValidator, mobileAsyncValidator],
       passwordsGroup: fb.group({
-        password: [''],
-        pconfirm: ['']
+        password: ['', Validators.minLength(6)],
+        pconfirm: ['', Validators.minLength(6)]
       }, { validator: equalValidator })
     })
     // this.formModel = new FormGroup({
