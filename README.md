@@ -10,7 +10,10 @@ npm start
 ``` 
 
 #### remark
-响应式表单重构（引入 **ReactiveFormsModule**）
+学习内容
+- 使用Nodejs创建服务器
+- 使用Express创建restful的http服务
+- 监控服务器文件的变化
 
 
 
