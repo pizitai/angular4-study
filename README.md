@@ -10,13 +10,17 @@ npm start
 ``` 
 
 #### remark
-模版式表单（引入 **FormsModule**）
-指令
-- NgForm  -> FormGroup
-- NgModel  -> FormControl
-- NgModelGroup   ->  FormGroup
-- ngNoForm (不让angular接管form)
+响应式表单（引入 **ReactiveFormsModule**）
+- FormControl
+- FormGroup
+- FormArray
 
+指令
+类名 | 指令(需要属性绑定)  | 指令(不需要属性绑定)
+---- | ---- | ----
+FormGroup | formGroup | formGroupName
+FormControl | formControl | formControlName
+FormArray |  | formArrayName
 
 
 ## AngularProjectPlus
