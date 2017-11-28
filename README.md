@@ -37,6 +37,20 @@ test6_8 | ngContent指令
 test6_9 | 最后的钩子
 test6_10 | 本章实践
 test6_11 | 本章小结
+test7 | 表单
+test7_1 | 表单内容处理介绍
+test7_2 | 表单简介
+test7_3 | 模版式表单
+test7_4 | 响应式表单
+test7_5 | 响应式表单重构
+test7_6 | 表单校验
+test7_7 | 状态字段
+test7_8 | 模版式表单校验
+test7_9 | 本章实践
+test7_10 | 本章小结
+test8 | 与服务器通讯
+test8_1 | 内容介绍
+test8_2 | web服务器
 
 ## Project-cli
 
