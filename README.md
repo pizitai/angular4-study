@@ -10,8 +10,10 @@ npm start
 ``` 
 
 #### remark
-投影
-ngContent
+纯HTML表单
+- 显示表单项
+- 校验用户输入
+- 提交表单数据
 
 
 ## AngularProjectPlus

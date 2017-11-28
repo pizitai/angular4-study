@@ -10,5 +10,4 @@ export class AppComponent implements OnInit{
     console.log('aa');   
   }
   title:string='app works';
-  divContent='<div>慕课网</div>';
 }
