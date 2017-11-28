@@ -10,11 +10,10 @@ npm start
 ``` 
 
 #### remark
-表单校验
-- Angular的校验器
-- 校验响应式表单
-- 校验模版式表单
-
+状态字段
+- touched和untouched  -  控制错误信息是否显示
+- pristine和dirty    -  关注的是值是否变过
+- pending    -  
 
 
 ## AngularProjectPlus
