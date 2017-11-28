@@ -10,10 +10,10 @@ npm start
 ``` 
 
 #### remark
-第七章 总结
-- 模版式表单
-- 响应式表单
-- 表单验证
+第八章 与服务器通讯
+- 创建Web服务器
+- Http通讯
+- WebSocket通讯
 
 
 ## AngularProjectPlus
