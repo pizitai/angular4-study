@@ -14,6 +14,7 @@ import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FilterPipe } from './pipe/filter.pipe';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
