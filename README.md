@@ -10,10 +10,10 @@ npm start
 ``` 
 
 #### remark
-学习内容
-- 了解angular的Http服务
-- 发送http请求
-- 处理http响应  
+WebSocket通讯
+- 了解websocket通讯
+- 创建websocket服务器
+- 使用websocket协议通讯  
 
 
 ## AngularProjectPlus
