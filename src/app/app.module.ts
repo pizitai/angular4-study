@@ -1,30 +1,40 @@
+import { ProductService } from './shared/product.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { CarouselComponent } from './carousel/carousel.component';
 import { ProductComponent } from './product/product.component';
-import {WebSocketService} from "./shared/web-socket.service";
-import {WebSocketComponent} from "./web-socket/web-socket.component";
-
-
+import { StarsComponent } from './stars/stars.component';
+import { SearchComponent } from './search/search.component';
+import { HomeComponent } from './home/home.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { FilterPipe } from './pipe/filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    CarouselComponent,
     ProductComponent,
-    WebSocketComponent
+    StarsComponent,
+    SearchComponent,
+    HomeComponent,
+    ProductDetailComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [WebSocketService],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

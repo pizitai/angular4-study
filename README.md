@@ -1,6 +1,6 @@
 # angular study
 
-2017-11-29
+2017-11-22
  
 
 #### How to start this project
@@ -10,12 +10,10 @@ npm start
 ``` 
 
 #### remark
-WebSocket通讯
-- 了解websocket通讯
-- 创建websocket服务器
-- 使用websocket协议通讯  
-<img src='./src/assets/img/aa.png'>
-<img src='./src/assets/img/bb.png'>
+第八章 与服务器通讯
+- 创建Web服务器
+- Http通讯
+- WebSocket通讯
 
 
 ## AngularProjectPlus

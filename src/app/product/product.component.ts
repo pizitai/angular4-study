@@ -1,9 +1,7 @@
-import { Headers } from '@angular/http';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Http } from '@angular/http';
+import { ProductService, Product } from '../shared/product.service';
+import { FormControl } from "@angular/forms";
 import 'rxjs/Rx';
-
 
 @Component({
   selector: 'app-product',
@@ -11,24 +9,20 @@ import 'rxjs/Rx';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-  dataSource: Observable<any>;
-  products: Observable<any>;
+  private products: Array<Product>;
+  private imgUrl = 'http://placehold.it/320X150';
+  private keyword: string;
+  private titleFilter: FormControl = new FormControl;
 
-  constructor(private http: Http) {
-    let myHeaders: Headers = new Headers();
-    myHeaders.append('Authorization', "Basic 123456");
-    this.products = this.http.get('/api/products', { headers: myHeaders })
-      .map((res) => {
-        return res.json()
-      })
-  }
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
-    // this.dataSource.subscribe(
-    //   (data) => {
-    //     this.products = data;
-    //   }
-    // )
+    this.products = this.productService.getProducts();
+    this.titleFilter.valueChanges
+      .debounceTime(500)
+      .subscribe(
+        value => this.keyword = value
+      )
   }
 
 }
