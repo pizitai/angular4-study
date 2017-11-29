@@ -10,12 +10,10 @@ npm start
 ``` 
 
 #### remark
-商品关注功能
-websocket 实战
-对应的项目 | branch
----- | ----
-node-demo | test1_1
-<img src="./src/assets/img/aa.png">
+本章小结
+- Http服务，它来自HttpModule，只有在调subscrible时才发请求
+- Websocket协议，它更简洁和高效，它是双向的
+- 使用nodejs和express创建web服务器是非常简单的
 
 
 ## AngularProjectPlus
