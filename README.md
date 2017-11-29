@@ -51,6 +51,15 @@ test7_10 | 本章小结
 test8 | 与服务器通讯
 test8_1 | 内容介绍
 test8_2 | web服务器
+test8_3 | http通讯
+test8_4 | web socket通讯
+test8_5 | 商品搜索功能
+test8_6 | 商品关注功能（websocket实战）
+test8_7 | 小结
+test9 | 构建与部署
+test9_1 | 构建与部署
+test9_2 | 部署
+test9_3 | 多环境
 
 ## Project-cli
 
