@@ -10,13 +10,11 @@ npm start
 ``` 
 
 #### remark
-第九章
-学习内容
-- 构建：编译和合并
-命令
-```shell
-ng build   //编译到dist目录下了
-```
+部署
+对应node-demo工程的分支
+项目 | branch
+---- | ----
+node-demo | test1_2
 
 
 ## AngularProjectPlus
