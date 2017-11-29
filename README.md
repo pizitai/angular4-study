@@ -13,8 +13,10 @@ npm start
 第九章
 学习内容
 - 构建：编译和合并
-- 部署：与服务器整合
-- 多环境：一套代码支持多种环境
+命令
+```shell
+ng build   //编译到dist目录下了
+```
 
 
 ## AngularProjectPlus
