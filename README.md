@@ -1,6 +1,6 @@
 # angular study
 
-2017-11-23
+2017-11-29
  
 
 #### How to start this project
@@ -14,6 +14,14 @@ npm start
 - 使用Nodejs创建服务器
 - 使用Express创建restful的http服务
 - 监控服务器文件的变化
+安装
+```shell
+cnpm install @types/node --save
+cnpm install express --save
+cnpm install @types/express --save
+npm installl -g nodemon        //监听文件变化
+```
+
 
 
 
