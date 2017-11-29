@@ -31,7 +31,6 @@ export class ProductService {
   }
   private encodeParams(params: ProductSearchParams) {
     let result: URLSearchParams;
-    // result.append('aa',"12");
     result = Object.keys(params)
       .filter(key => params[key])
       .reduce((sum: URLSearchParams, key: string) => {
@@ -39,12 +38,6 @@ export class ProductService {
         return sum;
       }, new URLSearchParams())
     return result;
-    // return Object.keys(params)
-    //   .filter(key => params[key])
-    //   .reduce((sum: URLSearchParams, key: string) => {
-    //     sum.append(key, params[key])
-    //     return sum;
-    //   }, new URLSearchParams());
   }
 
 }

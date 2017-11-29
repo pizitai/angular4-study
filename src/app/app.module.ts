@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import { HttpModule } from '@angular/http';
+import { WebSocketService } from './shared/web-socket.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { HttpModule } from '@angular/http';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [ProductService],
+  providers: [ProductService,WebSocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

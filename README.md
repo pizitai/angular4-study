@@ -10,7 +10,12 @@ npm start
 ``` 
 
 #### remark
-商品搜索功能
+商品关注功能
+websocket 实战
+对应的项目 | branch
+---- | ----
+node-demo | test1_1
+<img src="./src/assets/img/aa.png">
 
 
 ## AngularProjectPlus
