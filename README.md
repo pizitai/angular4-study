@@ -10,10 +10,11 @@ npm start
 ``` 
 
 #### remark
-本章小结
-- Http服务，它来自HttpModule，只有在调subscrible时才发请求
-- Websocket协议，它更简洁和高效，它是双向的
-- 使用nodejs和express创建web服务器是非常简单的
+第九章
+学习内容
+- 构建：编译和合并
+- 部署：与服务器整合
+- 多环境：一套代码支持多种环境
 
 
 ## AngularProjectPlus
