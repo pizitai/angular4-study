@@ -10,31 +10,10 @@ npm start
 ``` 
 
 #### remark
-多环境
-
-配置文件
-- .angular-cli.json
-```javascript
-"environments": {
-    "dev": "environments/environment.ts",
-    "test": "environments/environment.test.ts",
-    "prod": "environments/environment.prod.ts"
-}
-```
-- 目录 environments 下面建立对应的文件
-```shell
-├── environment.ts                      // 开发环境  
-├── environment.test.ts                 // 测试环境
-├── environment.prod.ts                 // 生产环境
-```
-这三个ts文件里面的对象**属性**要一致
-- 运行和测试的命令
-package.json 文件中进行配置
-```shell
-"start": "ng serve --env=prod --proxy-config proxy.conf.json",
-"build": "ng build --env=prod",
-```
-_配置完成后浏览器端就可跑在  开发  测试  生产  三种环境了_
+课程总结
+<img src="./src/assets/img/aa.png">
+<img src="./src/assets/img/bb.png">
+<img src="./src/assets/img/cc.png">
 
 
 
