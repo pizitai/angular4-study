@@ -60,6 +60,7 @@ test9 | 构建与部署
 test9_1 | 构建与部署
 test9_2 | 部署
 test9_3 | 多环境
+test10 | 课程总结
 
 ## Project-cli
 
