@@ -16,6 +16,8 @@ npm start
 ---- | ----
 node-demo | test1_2
 
+操作将  __dist__ 目录下的文件复制的   __client__ 目录下面
+
 
 ## AngularProjectPlus
 

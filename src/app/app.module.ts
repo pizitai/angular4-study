@@ -16,6 +16,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { FilterPipe } from './pipe/filter.pipe';
 import { HttpModule } from '@angular/http';
 import { WebSocketService } from './shared/web-socket.service';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { WebSocketService } from './shared/web-socket.service';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [ProductService,WebSocketService],
+  providers: [ProductService,WebSocketService,
+  {provide:LocationStrategy,useClass:HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
