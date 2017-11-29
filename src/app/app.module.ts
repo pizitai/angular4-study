@@ -14,6 +14,7 @@ import { ProductComponent } from './product/product.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
