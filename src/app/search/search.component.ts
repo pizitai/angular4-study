@@ -24,9 +24,10 @@ export class SearchComponent implements OnInit {
     this.categories = this.productService.getAllCategories();
   }
   onSearch() {
-    if (this.formModel.valid) {
+    // if (this.formModel.valid) {
       console.log(this.formModel.value);
-    }
+      this.productService.searchEvent.emit(this.formModel.value);
+    // }
   }
   positiveNumberValidator(control: FormControl): any {
     console.log('aaaa ' + control.value);
