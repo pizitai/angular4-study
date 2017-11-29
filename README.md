@@ -1,6 +1,6 @@
 # angular study
 
-2017-11-22
+2017-11-29
  
 
 #### How to start this project
@@ -10,10 +10,10 @@ npm start
 ``` 
 
 #### remark
-第八章 与服务器通讯
-- 创建Web服务器
-- Http通讯
-- WebSocket通讯  
+学习内容
+- 了解angular的Http服务
+- 发送http请求
+- 处理http响应  
 
 
 ## AngularProjectPlus
